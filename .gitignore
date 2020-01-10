@@ -12,3 +12,7 @@
 /captures
 .externalNativeBuild
 .cxx
+app/libs/
+zutil/libs/
+zutil/src/main/java/com/zlzxm/zutil/glide/
+zutil/src/main/java/com/zlzxm/zutil/ui/widget/banner/
