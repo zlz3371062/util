@@ -14,7 +14,6 @@ import android.view.WindowManager;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Toast;
 
-import com.jiuling.baselibrary.CommonToast;
 import com.trello.rxlifecycle3.components.support.RxAppCompatActivity;
 import com.zlzxm.zutil.appmanage.ActivityManager;
 import com.zlzxm.zutil.appmanage.LanguagerManager;
@@ -216,7 +215,13 @@ public abstract  class ZBaseAbsActivity extends RxAppCompatActivity {
 
 
     protected void showToast(String content){
-        CommonToast.Companion.message(content);
+
+        if(mToast ==null){
+
+            mToast = Toast.makeText(this,content,Toast.LENGTH_SHORT);
+        }
+        mToast.setText(content);
+        mToast.show();
     }
 
     @Override
