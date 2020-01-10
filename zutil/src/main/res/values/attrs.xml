@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <declare-styleable name="SimpleHead">
+
+
+        <attr name="titleColor" format="color"/>
+
+        <attr name="leftTipColor" format="color"/>
+
+        <attr name="rightTipColor" format="color"/>
+
+        <attr name="titleSize" format="dimension"/>
+
+        <attr name="leftTipSize" format="dimension"/>
+
+        <attr name="rightTipSize" format="dimension"/>
+
+        <attr name="titleText" format="string"/>
+
+        <attr name="leftIcon" format="reference"/>
+
+        <attr name="rightIcon" format="reference"/>
+
+        <attr name="leftTip" format="string"/>
+
+        <attr name="rightTip" format="string"/>
+
+        <attr name="isBold" format="boolean"/>
+
+
+    </declare-styleable>
+
+    <declare-styleable name="ZProgessView">
+
+        <attr name="progessColor" format="color"/>
+
+    </declare-styleable>
+
+</resources>

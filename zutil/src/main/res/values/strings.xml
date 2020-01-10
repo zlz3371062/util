@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">zutil</string>
+
+
+    <string name="date_time">yyyy-MM-dd  hh:mm:ss</string>
+    <string name="date_time_nosecond">yyyy-MM-dd  hh:mm</string>
+    <string name="date_show">MM-dd  hh:mm</string>
+    <string name="date">yyyy-MM-dd</string>
+    <string name="date_12">dd  HH:mm</string>
+    <string name="date_12_submit">yyyy-MM-dd  HH:mm:ss</string>
+</resources>

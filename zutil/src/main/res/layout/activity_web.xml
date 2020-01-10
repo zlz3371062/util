@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/rlContent"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ProgressBar
+        android:id="@+id/pb"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_gravity="center"
+        android:max="100"
+        android:progress="0"
+        />
+
+    <com.zlzxm.zutil.ui.widget.simplehead.SimpleHead
+        android:id="@+id/sh"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        app:titleText=""
+        app:leftTip="    "
+        app:leftTipSize="13dp"
+        app:titleSize="18dp">
+    </com.zlzxm.zutil.ui.widget.simplehead.SimpleHead>
+
+
+
+
+</RelativeLayout>

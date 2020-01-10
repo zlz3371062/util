@@ -1,0 +1,2 @@
+include ':app', ':zutil'
+rootProject.name='util'
