@@ -1,12 +1,6 @@
 package com.zlzxm.zutil.appmanage;
 
 
-import com.blankj.utilcode.util.SPUtils;
-import com.jiuling.baselibrary.Constants;
-import com.jiuling.baselibrary.Tool;
-import com.jiuling.baselibrary.UserInfoModel;
-import com.zlzxm.zutil.appmanage.Config;
-import com.zlzxm.zutil.appmanage.ConfigType;
 import com.zlzxm.zutil.common.StringHelp;
 import com.zlzxm.zutil.storage.ZBaseSharePreferences;
 
@@ -42,21 +36,14 @@ public class AppManager{
         zBaseSharePreferences.setString(TAG_TOKEN,token);
 //        zBaseSharePreferences.setLong(TAG_TOKEN_TIME,time);
         zBaseSharePreferences.setString(TAG_TOKEN_ID,id);
-        Constants.accessToken = token;
-        SPUtils.getInstance(Constants.spLoginFileName).put(Constants.spLoginToken, token);
-        SPUtils.getInstance(Constants.spLoginFileName).put(Constants.spLoginId, id+"");
+
 //        Tool.saveUserInfo(dataBean);
     }
 
-    public static void saveUserInfo(UserInfoModel.DataBean.MemberBean data){
-        Tool.saveUserInfo(data);
-    }
 
     public static void exit() {
         TOKEN = null;
         ID=null;
-        Tool.saveUserInfo(null);
-        Tool.saveUserStatus(null);
         zBaseSharePreferences.setString(TAG_TOKEN,null);
         zBaseSharePreferences.setString(TAG_TOKEN_ID,null);
     }
